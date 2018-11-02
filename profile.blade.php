@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<h1>This is Brad's Profile Page using Laravel</h1>
+	<h1>This is {{ $name }} Profile Page using Laravel</h1>
 
 @endsection
 

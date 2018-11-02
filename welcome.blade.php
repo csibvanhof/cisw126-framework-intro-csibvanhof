@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<h1>This is Brad's Welcome Page using Laravel</h1>
+	<h1>This is Brad's Welcome Page using {{ $pgm }}</h1>
 
 @endsection
 

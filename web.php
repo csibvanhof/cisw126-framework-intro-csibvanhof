@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', 'pagecontroller@homepage');
 
-Route::get('/profile', 'pagecontroller@profilepage');
+Route::get('/', function () {
+    return view('welcome', ['pgm' => request('mypgm')]);
+});
 
 
 
-//Route::get('/profile', function () {
-//    return view('profile');
-//});
+Route::get('/profile', function () {
+    return view('profile', ['name' => 'Brads']);
+});
